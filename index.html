@@ -1,17 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="imagens/img2.png">
-    <link rel="stylesheet" href=".css">
+    <link rel="stylesheet" href="style.css">
     <title>Coffe With U</title>
 </head>
+
 <body>
     <section class="header">
         <div class="circle"></div>
         <header class="cabecalho">
-            <a href="#" class="logo"><img src="imagens/logo.png" alt="" class="logo" ></a>
+            <a href="#" class="logo"><img src="imagens/logo.png" alt="" class="logo"></a>
             <nav>
                 <a href="#">Home</a>
                 <a href="#">Menu</a>
@@ -22,17 +24,22 @@
         <div class="content">
             <div class="textBox">
                 <h2>It's not just Coffee<br>It's<span>Starbucks</span></h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur laborum voluptatem at laudantium deserunt magni quo odit labore dolores tenetur qui, ut non perspiciatis neque hic adipisci dolore dolor eaque.</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur laborum voluptatem at laudantium
+                    deserunt magni quo odit labore dolores tenetur qui, ut non perspiciatis neque hic adipisci dolore
+                    dolor eaque.</p>
                 <a href="#">Learn More</a>
             </div>
             <div class="imgBox">
-                <img src="imagens/img1.png"  class="cafe">
+                <img src="imagens/img1.png" class="cafe">
             </div>
         </div>
         <ul class="thumb">
-            <li><img src="imagens/thumb1.png"  onclick="imgSlider  ('imagens/img1.png');changeCircleColor('#017143')"></li>
-            <li><img src="imagens/thumb2.png"  onclick="imgSlider  ('imagens/img2.png');changeCircleColor('#eb7495')"></li>
-            <li><img src="imagens/thumb3.png"  onclick="imgSlider  ('imagens/img3.png');changeCircleColor('#d752b1')"></li>
+            <li><img src="imagens/thumb1.png" onclick="imgSlider  ('imagens/img1.png');changeCircleColor('#017143')">
+            </li>
+            <li><img src="imagens/thumb2.png" onclick="imgSlider  ('imagens/img2.png');changeCircleColor('#eb7495')">
+            </li>
+            <li><img src="imagens/thumb3.png" onclick="imgSlider  ('imagens/img3.png');changeCircleColor('#d752b1')">
+            </li>
         </ul>
         <ul class="sci">
             <li><a href="#"><img src="imagens/facebook.png" alt=""></a></li>
@@ -41,14 +48,15 @@
         </ul>
     </section>
     <script>
-        function imgSlider (anything){
-        document.querySelector('.cafe').src = anything;
-}
+        function imgSlider(anything) {
+            document.querySelector('.cafe').src = anything;
+        }
 
-function changeCircleColor(color){
-    const circle = document.querySelector('.circle');
-    circle.style.backgroundColor = color;
-}
-</script>
+        function changeCircleColor(color) {
+            const circle = document.querySelector('.circle');
+            circle.style.backgroundColor = color;
+        }
+    </script>
 </body>
+
 </html>
